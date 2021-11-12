@@ -1,0 +1,147 @@
+html {
+scroll-behavior: smooth;
+}
+
+.whole {
+background-color:rgb(197, 203, 211);
+margin-top: 100px;
+}
+
+.navbar {
+background:whitesmoke;
+padding: .3rem 3rem;
+z-index: 1000;
+border: 3px #4AAAA5;
+}
+.navbar .navbar-brand {
+font-family: serif;
+font-size: 2.4rem;
+font-weight: 666;
+color:whitesmoke;
+padding-right: .5rem;
+padding-left: .5rem;
+margin-top: -.3rem;
+margin-bottom: -.3rem;
+background-color:lightseagreen;
+background-size: auto;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+color: #777777;
+font-size: 1.1rem;
+padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a.active {
+color: darkslategrey;
+}
+
+#navbarSupportedContent > button {
+background: whitesmoke;
+font-weight: 600;
+padding: 0.4rem 1.4rem;
+border-radius: 30px;
+}
+
+
+.vizbox {
+    background-color: whitesmoke;
+    min-height: 40%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.my-container {
+    background-color: #ffffff;
+    margin-top: 60px;
+}
+  
+  
+.my-container h1{
+    font-family: serif;
+    padding-left: .6rem;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: left;
+    align-self:center;
+    color: #4AAAA5;
+}
+
+.my-container p{
+    font-family: serif;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 991.98px) {
+
+    #navbarSupportedContent > ul{
+        width: 100%;
+        float: none !important;
+    }
+    .navbar{
+        background-color: lightseagreen;
+    }
+    #navbarSupportedContent > ul{
+        background-color: whitesmoke;
+        text-align: justify;
+        max-width: 991.98px;
+        margin: auto;
+        background-size: 100%;
+        padding: 0 !important;
+    }
+
+    .my-container {
+        margin-top: 70px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .whole {
+        background-color: whitesmoke;
+    }
+
+    .outer-grid {
+        display: block;
+        padding: 0 4em;
+    }
+
+    .summary {
+        margin-left: 0;
+    }
+    
+}
+
+
+
+.outer-grid {
+display: flex;
+flex-wrap: wrap;
+padding: 1 4em;
+}
+.inner-grid {
+flex:1;
+max-width: 50%;
+padding: 1 4em;
+}
+.inner-grid img {
+margin-top: 8px;
+width: 100%;
+padding: 10px;
+}
+@media screen and (max-width: 991.98px) {
+.inner-grid {
+    flex: 50%;
+    max-width: 100%;
+}
+}
+@media screen and (max-width: 991.98px) {
+.inner-grid {
+    flex: 100%;
+    max-width: 100%;
+}
+}
